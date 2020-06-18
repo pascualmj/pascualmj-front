@@ -1,0 +1,68 @@
+@import "../../assets/scss/variables.scss";
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 2rem 0 1.5rem;
+
+  &::before {
+    content: "";
+    display: block;
+    margin-right: 1rem;
+  }
+
+  span {
+    font-weight: $text-weight-bold;
+    text-transform: uppercase;
+  }
+
+  &.chip-small {
+    height: 3rem;
+    border-radius: 1.5rem;
+
+    &::before {
+      width: 0.7rem;
+      height: 0.7rem;
+      border-radius: 0.35rem;
+    }
+
+    span {
+      font-size: $text-small;
+    }
+  }
+
+  &.chip-big {
+    height: 4rem;
+    border-radius: 2rem;
+
+    &::before {
+      width: 1rem;
+      height: 1rem;
+      border-radius: 0.5rem;
+    }
+  }
+
+  &.chip-alternative {
+    border: 2px solid $color-alternative;
+
+    &::before {
+      background-color: $color-alternative;
+    }
+
+    span {
+      color: $color-alternative;
+    }
+  }
+
+  &.chip-dark {
+    background-color: $color-dark;
+
+    &::before {
+      background-color: $color-dark-lighter;
+    }
+
+    span {
+      color: $color-dark-lighter;
+    }
+  }
+}
