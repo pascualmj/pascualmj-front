@@ -1,0 +1,35 @@
+@import "../../../assets/scss/variables";
+@import "../../../assets/scss/mixins";
+
+.nav-link {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 0.6rem;
+    width: 0%;
+    left: 0;
+    top: 50%;
+    margin-top: -0.2rem;
+    background-color: $color-alternative;
+    @include transition(width 0.4s ease);
+  }
+
+  &:hover::before,
+  &.active::before {
+    width: 100%;
+  }
+
+  span {
+    position: relative;
+    display: block;
+    padding: 0 0.5rem;
+    font-family: $font-secondary;
+    font-size: $text-big;
+    text-transform: capitalize;
+    color: $color-absence;
+  }
+}

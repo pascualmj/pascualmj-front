@@ -1,0 +1,32 @@
+@import "../../assets/scss/variables";
+
+#nav-main {
+  width: 28rem;
+  background-color: $color-full;
+  height: 100vh;
+  padding: 0 3rem;
+  position: relative;
+  overflow-y: auto;
+
+  nav {
+    margin-top: 18rem;
+    margin-left: -0.4rem;
+    li {
+      margin-bottom: 2.2rem;
+    }
+  }
+
+  .square-dots-right {
+    position: absolute;
+    right: 0;
+    top: 20%;
+    width: 9.9rem;
+  }
+
+  .square-dots-left {
+    position: absolute;
+    left: 0;
+    top: 60%;
+    width: 7rem;
+  }
+}

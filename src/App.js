@@ -1,12 +1,19 @@
 import React from "react";
 
-import Chip from "./components/Chip";
+import ViewContainer from "./components/ViewContainer";
+import Logo from "./components/Logo";
+import NavMain from "./components/NavMain";
+import Home from "./views/Home";
 
 function App() {
   return (
-    <div style={{ margin: "20px" }}>
-      <Chip text="Javascript" />
-    </div>
+    <>
+      <Logo />
+      <NavMain />
+      <ViewContainer>
+        <Home />
+      </ViewContainer>
+    </>
   );
 }
 

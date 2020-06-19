@@ -1,0 +1,13 @@
+// Transitions
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+// View Section
+@mixin view-section() {
+  padding: 12rem 8rem 6rem;
+}

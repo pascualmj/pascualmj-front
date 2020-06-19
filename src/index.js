@@ -7,6 +7,9 @@ import "./assets/css/normalize.css";
 import "./assets/css/reset.css";
 import "./assets/css/typo.css";
 
+// Global SCSS File
+import "./index.scss";
+
 ReactDOM.render(
   <React.StrictMode>
     <App />

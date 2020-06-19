@@ -18,4 +18,9 @@ $text-bigger: 2.1rem;
 
 // Text Weight
 $text-weight-regular: 400; // Only set for Anonymous Pro
-$text-weight-bold: 700;
+$text-weight-semi-bold: 600; // Only set for Poppins
+$text-weight-bold: 700; // Only set for Anonymous Pro
+
+// Font Families
+$font-primary: "Anonymous Pro", monospace;
+$font-secondary: "Poppins", sans-serif;
