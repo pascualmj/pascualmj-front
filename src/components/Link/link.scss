@@ -1,0 +1,15 @@
+@import "../../assets/scss/variables";
+@import "../../assets/scss/mixins";
+
+.link {
+  font-size: $text-smaller;
+  @include transition(color 0.4s ease);
+
+  &.absence {
+    color: $color-absence;
+  }
+
+  &:hover {
+    color: $color-alternative;
+  }
+}

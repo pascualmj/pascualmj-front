@@ -1,0 +1,12 @@
+.list {
+  display: flex;
+  flex-direction: column;
+
+  &.row {
+    flex-direction: row;
+  }
+
+  & > li:last-child {
+    margin: 0 !important;
+  }
+}

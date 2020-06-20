@@ -7,13 +7,14 @@
   padding: 0 3rem;
   position: relative;
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   nav {
     margin-top: 18rem;
     margin-left: -0.4rem;
-    li {
-      margin-bottom: 2.2rem;
-    }
+    margin: 18rem 0 5rem -0.4rem;
   }
 
   .square-dots-right {
@@ -28,5 +29,19 @@
     left: 0;
     top: 60%;
     width: 7rem;
+  }
+
+  & > div {
+    text-align: center;
+    padding-bottom: 5rem;
+
+    .social-icons > ul {
+      display: inline-flex;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 1.2rem;
+    }
   }
 }
