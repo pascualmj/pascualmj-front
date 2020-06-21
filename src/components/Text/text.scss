@@ -1,0 +1,31 @@
+@import "../../assets/scss/variables";
+
+.text {
+  &.font-secondary {
+    font-family: $font-secondary;
+  }
+
+  &.color-primary {
+    color: $color-primary;
+  }
+
+  &.color-alternative {
+    color: $color-alternative;
+  }
+
+  &.color-absence {
+    color: $color-absence;
+  }
+
+  &.color-dark-lighter {
+    color: $color-dark-lighter;
+  }
+
+  &.size-small {
+    font-size: $text-small;
+  }
+
+  &.size-smaller {
+    font-size: $text-smaller;
+  }
+}
