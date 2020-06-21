@@ -21,7 +21,7 @@ const skills = [
 const SectionAbout = () => {
   return (
     <ViewSection>
-      <div class="greeting">
+      <div className="greeting">
         <CircleImage imgUrl={profileImage} alt="Manuel Pascual" size={150} />
         <SectionTitle title="Hey y'all!" size="big" />
       </div>
