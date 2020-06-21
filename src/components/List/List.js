@@ -10,13 +10,14 @@ const List = ({
   keyExtractor,
   direction = "column",
   itemSpacing = 22,
+  wrapItems = false,
 }) => {
   return (
-    <ul className={`list ${direction}`}>
+    <ul className={`list ${direction} ${wrapItems ? "wrap" : "nowrap"}`}>
       {items.map((item) => (
         <li
           key={keyExtractor(item)}
-          {...formatItemSpacing(direction, itemSpacing, "px")}
+          {...formatItemSpacing(direction, itemSpacing, wrapItems, "px")}
         >
           {renderItems(item)}
         </li>
@@ -31,6 +32,7 @@ List.propTypes = {
   keyExtractor: PropTypes.func.isRequired,
   direction: PropTypes.oneOf(["row", "column"]),
   itemSpacing: PropTypes.number,
+  wrapItems: PropTypes.bool,
 };
 
 export default List;
