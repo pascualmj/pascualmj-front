@@ -28,4 +28,9 @@
   &.size-smaller {
     font-size: $text-smaller;
   }
+
+  strong {
+    color: $color-absence;
+    font-weight: $text-weight-regular;
+  }
 }
