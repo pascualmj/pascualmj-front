@@ -1,0 +1,18 @@
+@import "../../assets/scss/mixins.scss";
+
+.preloader-main {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  @include transition(opacity 0.4s ease);
+
+  &.hidden {
+    opacity: 0;
+  }
+}
