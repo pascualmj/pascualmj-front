@@ -27,7 +27,7 @@ const List = ({
 };
 
 List.propTypes = {
-  items: PropTypes.object.isRequired,
+  items: PropTypes.array.isRequired,
   renderItems: PropTypes.func.isRequired,
   keyExtractor: PropTypes.func.isRequired,
   direction: PropTypes.oneOf(["row", "column"]),
