@@ -1,12 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "./sectionTitle.scss";
-import zigZagImage from "../../assets/img/img_02.png";
+
+import ZigZagImage from "../ZigZagImage";
 
 const SectionTitle = ({ title, size = "big" }) => {
   return (
     <div className="section-title">
-      <img src={zigZagImage} alt="" />
+      <ZigZagImage />
       <h2 className={size}>{title}</h2>
     </div>
   );
