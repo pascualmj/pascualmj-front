@@ -1,7 +1,9 @@
+@import "../../assets/scss/mixins";
+
 .circle-image {
   border-radius: 50%;
-  background-color: white;
   padding: 0.6rem;
+  @include gradient();
 
   img {
     width: 100%;

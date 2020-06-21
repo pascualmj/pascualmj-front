@@ -1,3 +1,5 @@
+@import "./variables";
+
 // Transitions
 @mixin transition($args...) {
   -webkit-transition: $args;
@@ -10,4 +12,16 @@
 // View Section
 @mixin view-section() {
   padding: 12rem 8rem 6rem;
+}
+
+// Gradients
+@mixin gradient($variant: "primary") {
+  @if $variant == "primary" {
+    background: $color-primary;
+    background: linear-gradient(
+      180deg,
+      $color-primary 0%,
+      $color-alternative 100%
+    );
+  }
 }
