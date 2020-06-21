@@ -1,6 +1,8 @@
 @import "../../assets/scss/variables";
 
 .text {
+  line-height: 1.8;
+
   &.font-secondary {
     font-family: $font-secondary;
   }
