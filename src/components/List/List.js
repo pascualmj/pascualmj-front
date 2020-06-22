@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./list.scss";
 
-import { formatItemSpacing } from "../../functions";
+import { formatItemSpacing, renderListDivider } from "../../functions";
 
 const List = ({
   items,
@@ -11,15 +11,17 @@ const List = ({
   direction = "column",
   itemSpacing = 22,
   wrapItems = false,
+  divider = null,
 }) => {
   return (
     <ul className={`list ${direction} ${wrapItems ? "wrap" : "nowrap"}`}>
-      {items.map((item) => (
+      {items.map((item, index) => (
         <li
           key={keyExtractor(item)}
           {...formatItemSpacing(direction, itemSpacing, wrapItems, "px")}
         >
           {renderItems(item)}
+          {renderListDivider(index, items.length, divider)}
         </li>
       ))}
     </ul>
@@ -33,6 +35,7 @@ List.propTypes = {
   direction: PropTypes.oneOf(["row", "column"]),
   itemSpacing: PropTypes.number,
   wrapItems: PropTypes.bool,
+  DividerEl: PropTypes.func,
 };
 
 export default List;

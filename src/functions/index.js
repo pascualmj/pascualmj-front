@@ -1,3 +1,4 @@
 import formatItemSpacing from "./formatItemSpacing";
+import renderListDivider from "./renderListDivider";
 
-export { formatItemSpacing };
+export { formatItemSpacing, renderListDivider };
