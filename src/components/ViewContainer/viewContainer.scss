@@ -3,4 +3,6 @@
 .view-container {
   flex-grow: 1;
   background-color: $color-dark;
+  height: 100vh;
+  overflow-y: auto;
 }
