@@ -6,9 +6,9 @@ import CircleImage from "../CircleImage";
 import Text from "../Text";
 import Chip from "../Chip";
 
-const Project = ({ imgUrl, title, technology }) => {
+const Project = ({ imgUrl, title, technology, className = "" }) => {
   return (
-    <article className="project">
+    <article className={`project ${className}`}>
       <CircleImage imgUrl={imgUrl} alt={title} />
       <Text
         font="secondary"
@@ -27,6 +27,7 @@ Project.propTypes = {
   imgUrl: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   technology: PropTypes.string.isRequired,
+  className: PropTypes.string,
 };
 
 export default Project;
