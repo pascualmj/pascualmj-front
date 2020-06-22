@@ -5,7 +5,7 @@ import "./tag.scss";
 const Tag = ({ title }) => {
   return (
     <span className="tag">
-      <i class="fas fa-tag"></i>
+      <i className="fas fa-tag"></i>
       {title}
     </span>
   );
