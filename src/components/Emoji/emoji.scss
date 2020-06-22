@@ -1,0 +1,13 @@
+@import "../../assets/scss/variables";
+
+.emoji {
+  font-size: $text-regular;
+
+  &.big {
+    font-size: $text-big;
+  }
+
+  &.bigger {
+    font-size: $text-bigger;
+  }
+}
