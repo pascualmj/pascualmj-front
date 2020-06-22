@@ -1,0 +1,14 @@
+@import "../../assets/scss/variables";
+
+.tag {
+  display: inline-block;
+  color: $color-alternative;
+  font-size: $text-smaller;
+  text-transform: lowercase;
+
+  [class*=" fa"] {
+    position: relative;
+    top: 1px;
+    margin-right: 0.5rem;
+  }
+}
