@@ -1,0 +1,23 @@
+@import "../../assets/scss/variables";
+
+.project {
+  padding: 1.2rem;
+  background-color: $color-dark-lighter;
+  border-radius: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  figure {
+    flex-shrink: 0;
+  }
+
+  .project-title {
+    flex-grow: 1;
+    margin: 0 2rem;
+  }
+
+  .chip {
+    margin-right: 1rem;
+  }
+}
