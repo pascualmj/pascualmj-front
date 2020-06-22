@@ -7,7 +7,7 @@ const Text = ({
   color = "secondary",
   size = "regular",
   children,
-  className,
+  className = "",
 }) => {
   return (
     <p className={`text font-${font} color-${color} size-${size} ${className}`}>
@@ -27,6 +27,7 @@ Text.propTypes = {
     "dark-lighter",
   ]),
   size: PropTypes.oneOf(["regular", "small", "smaller"]),
+  className: PropTypes.string,
 };
 
 export default Text;
