@@ -12,24 +12,28 @@ const projects = [
       "https://icons8.com/wp-content/uploads/2020/02/digital-illustration-brian-edward-miller.jpg",
     title: "Hotel Booking Website",
     technology: "Vue",
+    url: "https://www.gosail.com.ar/",
   },
   {
     imgUrl:
       "https://icons8.com/wp-content/uploads/2020/02/digital-illustration-brian-edward-miller.jpg",
     title: "Listing Web Platform",
     technology: "Node",
+    url: "https://www.gosail.com.ar/",
   },
   {
     imgUrl:
       "https://icons8.com/wp-content/uploads/2020/02/digital-illustration-brian-edward-miller.jpg",
     title: "Order Placing Platform",
     technology: "Javascript",
+    url: "https://www.gosail.com.ar/",
   },
   {
     imgUrl:
       "https://icons8.com/wp-content/uploads/2020/02/digital-illustration-brian-edward-miller.jpg",
     title: "Institutional Website",
     technology: "React",
+    url: "https://www.gosail.com.ar/",
   },
 ];
 
@@ -50,6 +54,7 @@ const SectionWork = () => {
             imgUrl={item.imgUrl}
             title={item.title}
             technology={item.technology}
+            url={item.url}
             className="mb-3"
           />
         )}
