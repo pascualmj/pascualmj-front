@@ -3,6 +3,7 @@ import React from "react";
 import SectionAbout from "./SectionAbout";
 import SectionWork from "./SectionWork";
 import SectionArticles from "./SectionArticles";
+import SectionPackages from "./SectionPackages";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <SectionAbout />
       <SectionWork />
       <SectionArticles />
+      <SectionPackages />
     </>
   );
 };
