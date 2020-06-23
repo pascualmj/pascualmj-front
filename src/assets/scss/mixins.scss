@@ -24,4 +24,12 @@
       $color-alternative 100%
     );
   }
+  @if $variant == "secondary" {
+    background: $color-primary;
+    background: linear-gradient(
+      90deg,
+      $color-primary-light 0%,
+      $color-primary 100%
+    );
+  }
 }
