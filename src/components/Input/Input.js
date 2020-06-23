@@ -24,7 +24,7 @@ const Input = ({
     <div
       className={`field-input ${isFocused ? "field-focused" : ""} ${className}`}
     >
-      {icon && <i class={`${icon} fa-fw`}></i>}
+      {icon && <i className={`${icon} fa-fw`}></i>}
       <input
         type={type}
         placeholder={placeholder}
