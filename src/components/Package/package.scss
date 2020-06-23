@@ -1,0 +1,40 @@
+@import "../../assets/scss/variables";
+
+.package {
+  display: block;
+  position: relative;
+
+  .package-circle {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 5.4rem;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-dark;
+    margin-top: -2.7rem;
+
+    span {
+      display: block;
+      width: 3.6rem;
+      height: 3.6rem;
+      border-radius: 50%;
+    }
+  }
+
+  .package-body {
+    border: 2px solid $color-dark-lighter;
+    border-radius: $border-radius;
+    padding: 2rem 3rem 2rem 4rem;
+    margin-left: 1.7rem;
+
+    p:last-child {
+      margin-top: -0.5rem;
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
