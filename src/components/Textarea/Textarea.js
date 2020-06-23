@@ -25,15 +25,14 @@ const Textarea = ({
         isFocused ? "field-focused" : ""
       } ${className}`}
     >
-      {icon && <i class={`${icon} fa-fw`}></i>}
+      {icon && <i className={`${icon} fa-fw`}></i>}
       <textarea
         placeholder={placeholder}
         onChange={handleChange}
         onFocus={handleFocus}
         onBlur={handleBlur}
-      >
-        {value}
-      </textarea>
+        defaultValue={value}
+      />
     </div>
   );
 };
