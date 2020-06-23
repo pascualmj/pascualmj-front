@@ -12,7 +12,12 @@ const Package = ({
   className = "",
 }) => {
   return (
-    <a href={url} rel="noopener noreferrer" className={`package ${className}`}>
+    <a
+      href={url}
+      rel="noopener noreferrer"
+      className={`package ${className}`}
+      target="_blank"
+    >
       <article>
         <span className="package-circle">
           <span style={{ backgroundColor: color }}></span>
