@@ -4,6 +4,7 @@ import SectionAbout from "./SectionAbout";
 import SectionWork from "./SectionWork";
 import SectionArticles from "./SectionArticles";
 import SectionPackages from "./SectionPackages";
+import SectionContact from "./SectionContact";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <SectionWork />
       <SectionArticles />
       <SectionPackages />
+      <SectionContact />
     </>
   );
 };
