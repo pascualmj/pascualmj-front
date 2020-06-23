@@ -17,7 +17,7 @@ const SocialIcons = () => {
         items={socialIcons}
         keyExtractor={(item) => item.label}
         renderItems={(item) => (
-          <a href={item.url} rel="noopener noreferrer">
+          <a href={item.url} rel="noopener noreferrer" target="_blank">
             <i className={item.label}></i>
           </a>
         )}
