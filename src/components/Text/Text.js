@@ -8,9 +8,13 @@ const Text = ({
   size = "regular",
   children,
   className = "",
+  style = {},
 }) => {
   return (
-    <p className={`text font-${font} color-${color} size-${size} ${className}`}>
+    <p
+      className={`text font-${font} color-${color} size-${size} ${className}`}
+      style={style}
+    >
       {children}
     </p>
   );
@@ -28,6 +32,7 @@ Text.propTypes = {
   ]),
   size: PropTypes.oneOf(["regular", "small", "smaller"]),
   className: PropTypes.string,
+  style: PropTypes.object,
 };
 
 export default Text;
