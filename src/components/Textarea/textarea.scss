@@ -1,0 +1,41 @@
+@import "../../assets/scss/variables";
+@import "../../assets/scss/mixins";
+
+.field-textarea {
+  background-color: $color-dark-lighter;
+  height: 15rem;
+  border-radius: 2.5rem;
+  padding: 1.7rem 2rem 1.7rem 1rem;
+  display: flex;
+  border: 2px solid $color-dark-lighter;
+  @include transition(border-color 0.4s ease);
+
+  [class*=" fa"] {
+    flex-shrink: 0;
+    margin-left: 1rem;
+    @include transition(color 0.4s ease);
+  }
+
+  textarea {
+    border: none;
+    background: none;
+    color: $color-secondary;
+    flex-grow: 1;
+    margin-left: 1rem;
+    position: relative;
+    top: -2px;
+    @include transition(color 0.4s ease);
+  }
+
+  &.field-focused {
+    border-color: $color-alternative;
+
+    [class*=" fa"] {
+      color: $color-alternative;
+    }
+
+    textarea {
+      color: $color-alternative;
+    }
+  }
+}
