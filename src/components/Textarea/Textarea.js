@@ -11,6 +11,7 @@ const Textarea = ({
   icon = "",
   error = "",
   className = "",
+  disabled = false,
 }) => {
   const [isFocused, setIsFocused] = useState(false);
 
@@ -27,7 +28,7 @@ const Textarea = ({
       <div
         className={`field-textarea ${isFocused ? "field-focused" : ""} ${
           error ? "has-error" : ""
-        }`}
+        } ${disabled ? "field-disabled" : ""}`}
       >
         {icon && <i className={`${icon} fa-fw`}></i>}
         <textarea
@@ -36,6 +37,7 @@ const Textarea = ({
           onFocus={handleFocus}
           onBlur={handleBlur}
           defaultValue={value}
+          disabled={disabled}
         />
       </div>
       {!!error && (
