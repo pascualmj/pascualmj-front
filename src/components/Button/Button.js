@@ -12,7 +12,7 @@ const Button = ({
 }) => {
   return (
     <button
-      className={`button button-${size}`}
+      className={`button button-${size} ${className}`}
       type={type}
       onClick={handleClick}
       disabled={disabled}
