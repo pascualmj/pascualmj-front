@@ -2,11 +2,14 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import "./textarea.scss";
 
+import Text from "../Text";
+
 const Textarea = ({
   value = "",
   handleChange,
   placeholder = "",
   icon = "",
+  error = "",
   className = "",
 }) => {
   const [isFocused, setIsFocused] = useState(false);
@@ -20,19 +23,26 @@ const Textarea = ({
   };
 
   return (
-    <div
-      className={`field-textarea ${
-        isFocused ? "field-focused" : ""
-      } ${className}`}
-    >
-      {icon && <i className={`${icon} fa-fw`}></i>}
-      <textarea
-        placeholder={placeholder}
-        onChange={handleChange}
-        onFocus={handleFocus}
-        onBlur={handleBlur}
-        defaultValue={value}
-      />
+    <div className={`field-textarea-container ${className}`}>
+      <div
+        className={`field-textarea ${isFocused ? "field-focused" : ""} ${
+          error ? "has-error" : ""
+        }`}
+      >
+        {icon && <i className={`${icon} fa-fw`}></i>}
+        <textarea
+          placeholder={placeholder}
+          onChange={handleChange}
+          onFocus={handleFocus}
+          onBlur={handleBlur}
+          defaultValue={value}
+        />
+      </div>
+      {!!error && (
+        <Text size="smaller" className="field-input-error">
+          {error}
+        </Text>
+      )}
     </div>
   );
 };
@@ -42,6 +52,7 @@ Textarea.propTypes = {
   handleChange: PropTypes.func.isRequired,
   placeholder: PropTypes.string,
   icon: PropTypes.string,
+  error: PropTypes.string,
   className: PropTypes.string,
 };
 
