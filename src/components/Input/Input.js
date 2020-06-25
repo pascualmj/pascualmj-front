@@ -12,6 +12,7 @@ const Input = ({
   icon = "",
   error = "",
   className = "",
+  disabled = false,
 }) => {
   const [isFocused, setIsFocused] = useState(false);
 
@@ -28,7 +29,7 @@ const Input = ({
       <div
         className={`field-input ${isFocused ? "field-focused" : ""} ${
           error ? "has-error" : ""
-        }`}
+        } ${disabled ? "field-disabled" : ""}`}
       >
         {icon && <i className={`${icon} fa-fw`}></i>}
         <input
@@ -38,6 +39,7 @@ const Input = ({
           onChange={handleChange}
           onFocus={handleFocus}
           onBlur={handleBlur}
+          disabled={disabled}
         />
       </div>
       {!!error && (
@@ -56,6 +58,7 @@ Input.propTypes = {
   handleChange: PropTypes.func.isRequired,
   icon: PropTypes.string,
   error: PropTypes.string,
+  disabled: PropTypes.bool,
   className: PropTypes.string,
 };
 
