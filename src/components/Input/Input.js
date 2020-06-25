@@ -2,12 +2,15 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import "./input.scss";
 
+import Text from "../Text";
+
 const Input = ({
   type,
   value = "",
   handleChange,
   placeholder = "",
   icon = "",
+  error = "",
   className = "",
 }) => {
   const [isFocused, setIsFocused] = useState(false);
@@ -21,18 +24,27 @@ const Input = ({
   };
 
   return (
-    <div
-      className={`field-input ${isFocused ? "field-focused" : ""} ${className}`}
-    >
-      {icon && <i className={`${icon} fa-fw`}></i>}
-      <input
-        type={type}
-        placeholder={placeholder}
-        value={value}
-        onChange={handleChange}
-        onFocus={handleFocus}
-        onBlur={handleBlur}
-      />
+    <div className={`field-input-container ${className}`}>
+      <div
+        className={`field-input ${isFocused ? "field-focused" : ""} ${
+          error ? "has-error" : ""
+        }`}
+      >
+        {icon && <i className={`${icon} fa-fw`}></i>}
+        <input
+          type={type}
+          placeholder={placeholder}
+          value={value}
+          onChange={handleChange}
+          onFocus={handleFocus}
+          onBlur={handleBlur}
+        />
+      </div>
+      {!!error && (
+        <Text size="smaller" className="field-input-error">
+          {error}
+        </Text>
+      )}
     </div>
   );
 };
@@ -43,6 +55,7 @@ Input.propTypes = {
   value: PropTypes.string,
   handleChange: PropTypes.func.isRequired,
   icon: PropTypes.string,
+  error: PropTypes.string,
   className: PropTypes.string,
 };
 
