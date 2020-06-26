@@ -1,12 +1,20 @@
 import Alfil from "alfil";
+import { fieldErrorText } from "./constants";
 
-export const contactFormValidator = Alfil.createValidator({
-  fieldName: Alfil.string().required().errorText("Este campo es obligatorio."),
-  fieldEmail: Alfil.string()
-    .email()
-    .required()
-    .errorText("Debes ingresar un email válido."),
-  fieldMessage: Alfil.string()
-    .required()
-    .errorText("No te olvides de dejar tu mensaje :)"),
-});
+export const contactFormValidator = {
+  initialValues: {
+    fieldName: "",
+    fieldEmail: "",
+    fieldMessage: "",
+  },
+  validator: Alfil.createValidator({
+    fieldName: Alfil.string().required().errorText(fieldErrorText.fieldName),
+    fieldEmail: Alfil.string()
+      .email()
+      .required()
+      .errorText(fieldErrorText.fieldEmail),
+    fieldMessage: Alfil.string()
+      .required()
+      .errorText(fieldErrorText.fieldMessage),
+  }),
+};
