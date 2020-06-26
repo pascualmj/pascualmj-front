@@ -4,9 +4,9 @@ import "./viewContainer.scss";
 
 import FooterMain from "../FooterMain";
 
-const ViewContainer = ({ children }) => {
+const ViewContainer = ({ id = "", children }) => {
   return (
-    <main className="view-container">
+    <main className="view-container" {...(!!id.length && { id })}>
       {children}
       <FooterMain />
     </main>
@@ -14,6 +14,7 @@ const ViewContainer = ({ children }) => {
 };
 
 ViewContainer.propTypes = {
+  id: PropTypes.string,
   children: PropTypes.node.isRequired,
 };
 
