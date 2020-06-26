@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import PropTypes from "prop-types";
 import imgRightMisc from "../../assets/img/img_00.png";
 import imgLeftMisc from "../../assets/img/img_01.png";
 import "./navMain.scss";
@@ -8,12 +9,12 @@ import List from "../List";
 import Link from "../Link";
 import SocialIcons from "../SocialIcons";
 
-import { scrollToSection } from "../../functions";
+import { scrollToSection, isInViewport } from "../../functions";
 import { viewSections, mainViewContainerId } from "../../config/constants";
 
-const NavMain = () => {
-  const [navLinks] = useState([
-    { text: "aboute me", scrollTo: viewSections.sectionAbout, isActive: true },
+const NavMain = ({ viewScrollTop = 0 }) => {
+  const [navLinks, setNavLinks] = useState([
+    { text: "aboute me", scrollTo: viewSections.sectionAbout, isActive: false },
     { text: "my work", scrollTo: viewSections.sectionWork, isActive: false },
     {
       text: "articles",
@@ -31,6 +32,20 @@ const NavMain = () => {
       isActive: false,
     },
   ]);
+
+  useEffect(() => {
+    isInViewport(viewScrollTop, changeActiveLink);
+  }, [viewScrollTop]);
+
+  const changeActiveLink = (sectionId) => {
+    setNavLinks((currentState) => {
+      return currentState
+        .map((link) => (link.isActive ? { ...link, isActive: false } : link))
+        .map((link) =>
+          link.scrollTo === sectionId ? { ...link, isActive: true } : link
+        );
+    });
+  };
 
   const handleClick = (scrollTo) => {
     scrollToSection(mainViewContainerId, scrollTo);
@@ -60,6 +75,10 @@ const NavMain = () => {
       </div>
     </div>
   );
+};
+
+NavMain.propTypes = {
+  viewScrollTop: PropTypes.number,
 };
 
 export default NavMain;
