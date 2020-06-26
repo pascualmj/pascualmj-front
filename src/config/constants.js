@@ -5,3 +5,11 @@ export const fieldErrorText = {
   fieldEmail: "You must enter a valid email address.",
   fieldMessage: "Don't forget to leave your message :)",
 };
+export const mainViewContainerId = "main-view-container";
+export const viewSections = {
+  sectionAbout: "section-about",
+  sectionArticles: "section-articles",
+  sectionContact: "section-contact",
+  sectionPackages: "section-packages",
+  sectionWork: "section-work",
+};
