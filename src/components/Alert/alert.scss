@@ -1,0 +1,30 @@
+@import "../../assets/scss/variables";
+
+.alert {
+  background-color: $color-dark-lighter;
+  padding: 1.3rem 2.5rem 1.3rem;
+  border-radius: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &.alert-success {
+    background-color: $color-success;
+  }
+
+  &.alert-error {
+    background-color: $color-error;
+  }
+
+  p {
+    flex-grow: 1;
+  }
+
+  .alert-close {
+    margin-left: 2rem;
+    flex-shrink: 0;
+    flex-grow: 0;
+    color: $color-absence;
+    cursor: pointer;
+  }
+}
