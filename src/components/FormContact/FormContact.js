@@ -26,7 +26,6 @@ const FormContact = () => {
         type: "success",
         show: true,
       });
-      console.log(values);
       cleanForm(contactFormValidator.initialValues);
     }, 3000);
   };
