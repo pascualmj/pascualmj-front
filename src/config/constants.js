@@ -6,6 +6,7 @@ export const fieldErrorText = {
   fieldMessage: "Don't forget to leave your message :)",
 };
 export const mainViewContainerId = "main-view-container";
+export const viewSectionClassName = ".view-section";
 export const viewSections = {
   sectionAbout: "section-about",
   sectionArticles: "section-articles",
