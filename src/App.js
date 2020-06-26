@@ -6,6 +6,8 @@ import Logo from "./components/Logo";
 import NavMain from "./components/NavMain";
 import Home from "./views/Home";
 
+import { mainViewContainerId } from "./config/constants";
+
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -18,7 +20,7 @@ function App() {
       <PreloaderMain isLoading={isLoading} delay={1000} />
       <Logo />
       <NavMain />
-      <ViewContainer>
+      <ViewContainer id={mainViewContainerId}>
         <Home />
       </ViewContainer>
     </>
