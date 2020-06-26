@@ -9,6 +9,8 @@ import Text from "../../../components/Text";
 import List from "../../../components/List";
 import Chip from "../../../components/Chip";
 
+import { viewSections } from "../../../config/constants";
+
 const skills = [
   { text: "html" },
   { text: "css" },
@@ -20,7 +22,7 @@ const skills = [
 
 const SectionAbout = () => {
   return (
-    <ViewSection>
+    <ViewSection id={viewSections.sectionAbout}>
       <div className="greeting">
         <CircleImage imgUrl={profileImage} alt="Manuel Pascual" size={150} />
         <SectionTitle title="Hey y'all!" size="big" />

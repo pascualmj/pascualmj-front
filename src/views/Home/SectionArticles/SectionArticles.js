@@ -7,6 +7,8 @@ import List from "../../../components/List";
 import Article from "../../../components/Article";
 import Divider from "../../../components/Divider";
 
+import { viewSections } from "../../../config/constants";
+
 const articles = [
   {
     title: "Understanding destructuring in Javascript.",
@@ -39,7 +41,7 @@ const articles = [
 
 const SectionArticles = () => {
   return (
-    <ViewSection>
+    <ViewSection id={viewSections.sectionArticles}>
       <SectionTitle title="Articles." size="regular" />
       <Text className="mt-2 mb-7">
         I’m Manuel Pascual, a Full Stack Web Developer based in Argentina. With

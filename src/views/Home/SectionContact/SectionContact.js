@@ -5,9 +5,11 @@ import SectionTitle from "../../../components/SectionTitle";
 import Text from "../../../components/Text";
 import FormContact from "../../../components/FormContact";
 
+import { viewSections } from "../../../config/constants";
+
 const SectionContact = () => {
   return (
-    <ViewSection>
+    <ViewSection id={viewSections.sectionContact}>
       <SectionTitle title="Contact Me." size="regular" />
       <Text className="mt-2 mb-7">
         I’m Manuel Pascual, a Full Stack Web Developer based in Argentina. With
