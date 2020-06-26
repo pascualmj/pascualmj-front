@@ -2,8 +2,15 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./viewContainer.scss";
 
+import FooterMain from "../FooterMain";
+
 const ViewContainer = ({ children }) => {
-  return <main className="view-container">{children}</main>;
+  return (
+    <main className="view-container">
+      {children}
+      <FooterMain />
+    </main>
+  );
 };
 
 ViewContainer.propTypes = {
