@@ -36,7 +36,7 @@ const Textarea = ({
           onChange={handleChange}
           onFocus={handleFocus}
           onBlur={handleBlur}
-          defaultValue={value}
+          value={value}
           disabled={disabled}
         />
       </div>
