@@ -8,23 +8,28 @@ import Home from "./views/Home";
 
 import { mainViewContainerId } from "./config/constants";
 
-function App() {
+const App = () => {
   const [isLoading, setIsLoading] = useState(true);
+  const [viewScrollTop, setViewScrollTop] = useState(0);
 
   useEffect(() => {
     setIsLoading(false);
   }, []);
 
+  const handleViewScroll = (e) => {
+    setViewScrollTop(e.target.scrollTop);
+  };
+
   return (
     <>
       <PreloaderMain isLoading={isLoading} delay={1000} />
       <Logo />
-      <NavMain />
-      <ViewContainer id={mainViewContainerId}>
+      <NavMain viewScrollTop={viewScrollTop} />
+      <ViewContainer id={mainViewContainerId} onViewScroll={handleViewScroll}>
         <Home />
       </ViewContainer>
     </>
   );
-}
+};
 
 export default App;
