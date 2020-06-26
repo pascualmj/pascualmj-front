@@ -8,16 +8,32 @@ import List from "../List";
 import Link from "../Link";
 import SocialIcons from "../SocialIcons";
 
+import { scrollToSection } from "../../functions";
+import { viewSections, mainViewContainerId } from "../../config/constants";
+
 const NavMain = () => {
   const [navLinks] = useState([
-    { text: "aboute me", isActive: true },
-    { text: "my work", isActive: false },
-    { text: "articles", isActive: false },
-    { text: "contact me", isActive: false },
+    { text: "aboute me", scrollTo: viewSections.sectionAbout, isActive: true },
+    { text: "my work", scrollTo: viewSections.sectionWork, isActive: false },
+    {
+      text: "articles",
+      scrollTo: viewSections.sectionArticles,
+      isActive: false,
+    },
+    {
+      text: "OS projects",
+      scrollTo: viewSections.sectionPackages,
+      isActive: false,
+    },
+    {
+      text: "contact me",
+      scrollTo: viewSections.sectionContact,
+      isActive: false,
+    },
   ]);
 
-  const handleClick = () => {
-    console.log("Apretaste!");
+  const handleClick = (scrollTo) => {
+    scrollToSection(mainViewContainerId, scrollTo);
   };
 
   return (
@@ -32,6 +48,7 @@ const NavMain = () => {
             <NavLink
               text={item.text}
               isActive={item.isActive}
+              scrollTo={item.scrollTo}
               handleClick={handleClick}
             />
           )}
