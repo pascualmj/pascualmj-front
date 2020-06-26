@@ -1,9 +1,10 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 import "./socialIcons.scss";
 
 import List from "../List";
 
-const SocialIcons = () => {
+const SocialIcons = ({ variant = "absence", className = "" }) => {
   const [socialIcons] = useState([
     { label: "fab fa-github", url: "https://www.gosail.com.ar/" },
     { label: "fab fa-npm", url: "https://www.gosail.com.ar/" },
@@ -12,7 +13,7 @@ const SocialIcons = () => {
   ]);
 
   return (
-    <div className="social-icons">
+    <div className={`social-icons social-icons-${variant} ${className}`}>
       <List
         items={socialIcons}
         keyExtractor={(item) => item.label}
@@ -26,6 +27,11 @@ const SocialIcons = () => {
       />
     </div>
   );
+};
+
+SocialIcons.propTypes = {
+  variant: PropTypes.oneOf(["absence", "secondary"]),
+  className: PropTypes.string,
 };
 
 export default SocialIcons;
