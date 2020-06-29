@@ -6,7 +6,7 @@ import Form from "../Form";
 import Button from "../Button";
 import Alert from "../Alert";
 
-import * as constants from "../../config/constants";
+import { MESSAGE_SUCCESS } from "../../config/constants";
 import { contactFormValidator } from "../../config/validators";
 
 const FormContact = () => {
@@ -22,7 +22,7 @@ const FormContact = () => {
     setTimeout(() => {
       setIsSubmitting(false);
       setAlertData({
-        text: constants.successMessage,
+        text: MESSAGE_SUCCESS,
         type: "success",
         show: true,
       });

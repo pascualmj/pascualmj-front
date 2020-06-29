@@ -6,7 +6,7 @@ import Logo from "./components/Logo";
 import NavMain from "./components/NavMain";
 import Home from "./views/Home";
 
-import { mainViewContainerId } from "./config/constants";
+import { MAIN_VIEW_CONTAINER_ID } from "./config/constants";
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -25,7 +25,10 @@ const App = () => {
       <PreloaderMain isLoading={isLoading} delay={1000} />
       <Logo />
       <NavMain viewScrollTop={viewScrollTop} />
-      <ViewContainer id={mainViewContainerId} onViewScroll={handleViewScroll}>
+      <ViewContainer
+        id={MAIN_VIEW_CONTAINER_ID}
+        onViewScroll={handleViewScroll}
+      >
         <Home />
       </ViewContainer>
     </>

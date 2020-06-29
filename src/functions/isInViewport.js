@@ -1,9 +1,9 @@
-import { viewSectionClassName } from "../config/constants";
+import { VIEW_SECTION_CLASSNAME } from "../config/constants";
 
 let sections;
 
 const isInViewport = (currentScrollTop, cb) => {
-  if (!sections) sections = document.querySelectorAll(viewSectionClassName);
+  if (!sections) sections = document.querySelectorAll(VIEW_SECTION_CLASSNAME);
 
   sections.forEach((section) => {
     if (!section.id) return;

@@ -6,7 +6,7 @@ import Text from "../../../components/Text";
 import Grid from "../../../components/Grid";
 import Project from "../../../components/Project";
 
-import { viewSections } from "../../../config/constants";
+import { VIEW_SECTIONS } from "../../../config/constants";
 
 const projects = [
   {
@@ -41,7 +41,7 @@ const projects = [
 
 const SectionWork = () => {
   return (
-    <ViewSection id={viewSections.sectionWork}>
+    <ViewSection id={VIEW_SECTIONS.sectionWork}>
       <SectionTitle title="My Work." size="regular" />
       <Text className="mt-2 mb-7">
         I’m Manuel Pascual, a Full Stack Web Developer based in Argentina. With

@@ -6,7 +6,7 @@ import Text from "../../../components/Text";
 import Grid from "../../../components/Grid";
 import Package from "../../../components/Package";
 
-import { viewSections } from "../../../config/constants";
+import { VIEW_SECTIONS } from "../../../config/constants";
 
 const packages = [
   {
@@ -31,7 +31,7 @@ const packages = [
 
 const SectionPackages = () => {
   return (
-    <ViewSection id={viewSections.sectionPackages}>
+    <ViewSection id={VIEW_SECTIONS.sectionPackages}>
       <SectionTitle title="Open source projects." size="regular" />
       <Text className="mt-2 mb-7">
         I’m Manuel Pascual, a Full Stack Web Developer based in Argentina. With

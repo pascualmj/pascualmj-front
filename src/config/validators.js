@@ -1,5 +1,5 @@
 import Alfil from "alfil";
-import { fieldErrorText } from "./constants";
+import { FIELD_ERROR_TEXT } from "./constants";
 
 export const contactFormValidator = {
   initialValues: {
@@ -8,13 +8,13 @@ export const contactFormValidator = {
     fieldMessage: "",
   },
   validator: Alfil.createValidator({
-    fieldName: Alfil.string().required().errorText(fieldErrorText.fieldName),
+    fieldName: Alfil.string().required().errorText(FIELD_ERROR_TEXT.fieldName),
     fieldEmail: Alfil.string()
       .email()
       .required()
-      .errorText(fieldErrorText.fieldEmail),
+      .errorText(FIELD_ERROR_TEXT.fieldEmail),
     fieldMessage: Alfil.string()
       .required()
-      .errorText(fieldErrorText.fieldMessage),
+      .errorText(FIELD_ERROR_TEXT.fieldMessage),
   }),
 };

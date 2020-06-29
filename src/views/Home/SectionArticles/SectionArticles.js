@@ -7,7 +7,7 @@ import List from "../../../components/List";
 import Article from "../../../components/Article";
 import Divider from "../../../components/Divider";
 
-import { viewSections } from "../../../config/constants";
+import { VIEW_SECTIONS } from "../../../config/constants";
 
 const articles = [
   {
@@ -41,7 +41,7 @@ const articles = [
 
 const SectionArticles = () => {
   return (
-    <ViewSection id={viewSections.sectionArticles}>
+    <ViewSection id={VIEW_SECTIONS.sectionArticles}>
       <SectionTitle title="Articles." size="regular" />
       <Text className="mt-2 mb-7">
         I’m Manuel Pascual, a Full Stack Web Developer based in Argentina. With

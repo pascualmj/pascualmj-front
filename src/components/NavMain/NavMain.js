@@ -10,25 +10,29 @@ import Link from "../Link";
 import SocialIcons from "../SocialIcons";
 
 import { scrollToSection, isInViewport } from "../../functions";
-import { viewSections, mainViewContainerId } from "../../config/constants";
+import { VIEW_SECTIONS, MAIN_VIEW_CONTAINER_ID } from "../../config/constants";
 
 const NavMain = ({ viewScrollTop = 0 }) => {
   const [navLinks, setNavLinks] = useState([
-    { text: "aboute me", scrollTo: viewSections.sectionAbout, isActive: false },
-    { text: "my work", scrollTo: viewSections.sectionWork, isActive: false },
+    {
+      text: "aboute me",
+      scrollTo: VIEW_SECTIONS.sectionAbout,
+      isActive: false,
+    },
+    { text: "my work", scrollTo: VIEW_SECTIONS.sectionWork, isActive: false },
     {
       text: "articles",
-      scrollTo: viewSections.sectionArticles,
+      scrollTo: VIEW_SECTIONS.sectionArticles,
       isActive: false,
     },
     {
       text: "OS projects",
-      scrollTo: viewSections.sectionPackages,
+      scrollTo: VIEW_SECTIONS.sectionPackages,
       isActive: false,
     },
     {
       text: "contact me",
-      scrollTo: viewSections.sectionContact,
+      scrollTo: VIEW_SECTIONS.sectionContact,
       isActive: false,
     },
   ]);
@@ -48,7 +52,7 @@ const NavMain = ({ viewScrollTop = 0 }) => {
   };
 
   const handleClick = (scrollTo) => {
-    scrollToSection(mainViewContainerId, scrollTo);
+    scrollToSection(MAIN_VIEW_CONTAINER_ID, scrollTo);
   };
 
   return (
