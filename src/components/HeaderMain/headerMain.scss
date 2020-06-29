@@ -1,0 +1,20 @@
+@import "../../assets/scss/variables";
+
+#header-main {
+  position: fixed;
+  width: 100%;
+  height: 7rem;
+  background-color: $color-full;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+  overflow: hidden;
+
+  @media (min-width: 992px) {
+    width: 28rem;
+    align-items: flex-end;
+    background: none;
+  }
+}

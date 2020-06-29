@@ -1,0 +1,36 @@
+@import "../../assets/scss/variables";
+@import "../../assets/scss/mixins";
+
+.nav-main-toggler {
+  width: 2.7rem;
+  height: 2.1rem;
+  position: relative;
+  cursor: pointer;
+
+  @media (min-width: 992px) {
+    display: none;
+  }
+
+  [class*=" fa"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: $text-bigger;
+    color: $color-primary;
+    @include transition(opacity 0.3s ease);
+
+    &.nav-main-close {
+      opacity: 0;
+    }
+  }
+
+  &.variant-close {
+    .nav-main-open {
+      opacity: 0;
+    }
+
+    .nav-main-close {
+      opacity: 1;
+    }
+  }
+}

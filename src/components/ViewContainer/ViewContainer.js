@@ -4,7 +4,13 @@ import "./viewContainer.scss";
 
 import FooterMain from "../FooterMain";
 
-const ViewContainer = ({ id = "", onViewScroll, children }) => {
+const ViewContainer = ({
+  id = "",
+  onViewScroll,
+  children,
+  handleOpenNav,
+  navIsOpen,
+}) => {
   useEffect(() => {
     if (onViewScroll && id) {
       document.getElementById(id).addEventListener("scroll", onViewScroll);
@@ -18,7 +24,14 @@ const ViewContainer = ({ id = "", onViewScroll, children }) => {
   }, [id, onViewScroll]);
 
   return (
-    <main className="view-container" {...(!!id.length && { id })}>
+    <main
+      className={`view-container ${navIsOpen ? "translated" : ""}`}
+      {...(!!id.length && { id })}
+    >
+      <div
+        className={`overlay ${navIsOpen ? "show" : ""}`}
+        onClick={handleOpenNav}
+      ></div>
       {children}
       <FooterMain />
     </main>
@@ -29,6 +42,8 @@ ViewContainer.propTypes = {
   id: PropTypes.string,
   onViewScroll: PropTypes.func.isRequired,
   children: PropTypes.node.isRequired,
+  handleOpenNav: PropTypes.func.isRequired,
+  navIsOpen: PropTypes.bool.isRequired,
 };
 
 export default ViewContainer;

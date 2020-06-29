@@ -1,7 +1,8 @@
 @import "./assets/scss/variables";
 
 #root {
-  display: flex;
+  background-color: $color-full;
+  height: 100vh;
 }
 
 // Utilities: Margins

@@ -12,7 +12,7 @@ import SocialIcons from "../SocialIcons";
 import { scrollToSection, isInViewport } from "../../functions";
 import { VIEW_SECTIONS, MAIN_VIEW_CONTAINER_ID } from "../../config/constants";
 
-const NavMain = ({ viewScrollTop = 0 }) => {
+const NavMain = ({ viewScrollTop = 0, isOpen = false }) => {
   const [navLinks, setNavLinks] = useState([
     {
       text: "aboute me",
@@ -56,7 +56,7 @@ const NavMain = ({ viewScrollTop = 0 }) => {
   };
 
   return (
-    <div id="nav-main">
+    <div id="nav-main" className={`${isOpen ? "open" : ""}`}>
       <img src={imgRightMisc} alt="" className="square-dots-right" />
       <img src={imgLeftMisc} alt="" className="square-dots-left" />
       <nav>
@@ -83,6 +83,7 @@ const NavMain = ({ viewScrollTop = 0 }) => {
 
 NavMain.propTypes = {
   viewScrollTop: PropTypes.number,
+  isOpen: PropTypes.bool,
 };
 
 export default NavMain;
