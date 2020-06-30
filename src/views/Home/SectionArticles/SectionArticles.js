@@ -27,9 +27,8 @@ const SectionArticles = () => {
     <ViewSection id={VIEW_SECTIONS.sectionArticles}>
       <SectionTitle title="Articles." size="regular" />
       <Text className="mt-2 mb-7">
-        I’m Manuel Pascual, a Full Stack Web Developer based in Argentina. With
-        every line of code I write, I strive to make the web a beatiful place
-        lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        In my spare time, I like to write articles about development to help and
+        support the community. Check out the latest articles I wrote.
       </Text>
       <List
         items={articles}

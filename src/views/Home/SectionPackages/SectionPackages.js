@@ -34,9 +34,9 @@ const SectionPackages = () => {
     <ViewSection id={VIEW_SECTIONS.sectionPackages}>
       <SectionTitle title="Open source projects." size="regular" />
       <Text className="mt-2 mb-7">
-        I’m Manuel Pascual, a Full Stack Web Developer based in Argentina. With
-        every line of code I write, I strive to make the web a beatiful place
-        lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        I love to create solutions to face everyday problems, and most
+        important, upload or publish them to let other developers use them in
+        their own projects.
       </Text>
       <Grid
         items={packages}

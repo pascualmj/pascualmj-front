@@ -12,30 +12,58 @@ const projects = [
   {
     imgUrl:
       "https://icons8.com/wp-content/uploads/2020/02/digital-illustration-brian-edward-miller.jpg",
-    title: "Hotel Booking Website",
+    title: "Boat Selling Platform",
     technology: "Vue",
     url: "https://www.gosail.com.ar/",
   },
   {
     imgUrl:
       "https://icons8.com/wp-content/uploads/2020/02/digital-illustration-brian-edward-miller.jpg",
-    title: "Listing Web Platform",
-    technology: "Node",
-    url: "https://www.gosail.com.ar/",
-  },
-  {
-    imgUrl:
-      "https://icons8.com/wp-content/uploads/2020/02/digital-illustration-brian-edward-miller.jpg",
-    title: "Order Placing Platform",
+    title: "Construction Materiales Company",
     technology: "JS",
-    url: "https://www.gosail.com.ar/",
+    url: "https://messineomateriales.com/pedidos/",
   },
   {
     imgUrl:
       "https://icons8.com/wp-content/uploads/2020/02/digital-illustration-brian-edward-miller.jpg",
-    title: "Institutional Website",
+    title: "Wedding Landing Page",
     technology: "React",
-    url: "https://www.gosail.com.ar/",
+    url: "https://www.dayjorge.com/",
+  },
+  {
+    imgUrl:
+      "https://icons8.com/wp-content/uploads/2020/02/digital-illustration-brian-edward-miller.jpg",
+    title: "Insurance Brokers Website",
+    technology: "Vue",
+    url: "https://www.estudioveliz.com/",
+  },
+  {
+    imgUrl:
+      "https://icons8.com/wp-content/uploads/2020/02/digital-illustration-brian-edward-miller.jpg",
+    title: "Street Ads Business Landing Page",
+    technology: "JS",
+    url: "https://superestructurasmetalicas.com/",
+  },
+  {
+    imgUrl:
+      "https://icons8.com/wp-content/uploads/2020/02/digital-illustration-brian-edward-miller.jpg",
+    title: "Hotel Website",
+    technology: "JS",
+    url: "https://clairdelunevgb.com.ar/",
+  },
+  {
+    imgUrl:
+      "https://icons8.com/wp-content/uploads/2020/02/digital-illustration-brian-edward-miller.jpg",
+    title: "Construction Company Website",
+    technology: "JS",
+    url: "http://www.luiniyluini.com.ar/",
+  },
+  {
+    imgUrl:
+      "https://icons8.com/wp-content/uploads/2020/02/digital-illustration-brian-edward-miller.jpg",
+    title: "Agency Portfolio Website",
+    technology: "JS",
+    url: "https://www.estudiobl.com/en/home/",
   },
 ];
 
@@ -44,9 +72,9 @@ const SectionWork = () => {
     <ViewSection id={VIEW_SECTIONS.sectionWork}>
       <SectionTitle title="My Work." size="regular" />
       <Text className="mt-2 mb-7">
-        I’m Manuel Pascual, a Full Stack Web Developer based in Argentina. With
-        every line of code I write, I strive to make the web a beatiful place
-        lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Feel free to take a look at some of my <strong>latest projects</strong>{" "}
+        I worked in. I love to be faced with new projects, striving to offer the
+        best user experience.
       </Text>
       <Grid
         items={projects}

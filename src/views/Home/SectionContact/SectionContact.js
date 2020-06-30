@@ -12,9 +12,8 @@ const SectionContact = () => {
     <ViewSection id={VIEW_SECTIONS.sectionContact}>
       <SectionTitle title="Contact Me." size="regular" />
       <Text className="mt-2 mb-7">
-        I’m Manuel Pascual, a Full Stack Web Developer based in Argentina. With
-        every line of code I write, I strive to make the web a beatiful place
-        lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Want to hire me or work with me? Send your message using this form or by
+        sending an email directly to <strong>hello@pascualmj.dev</strong>.
       </Text>
       <FormContact />
     </ViewSection>

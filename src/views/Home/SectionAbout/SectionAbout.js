@@ -28,16 +28,11 @@ const SectionAbout = () => {
         <SectionTitle title="Hey y'all!" size="big" />
       </div>
       <Text className="mt-7">
-        I’m Manuel Pascual, a Full Stack Web Developer based in Argentina. With
-        every line of code I write, I strive to make the web a beatiful place
-        lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      </Text>
-      <Text className="mt-3">
-        Since 2012, Vestibulum dictum purus in diam iaculis, at condimentum
-        justo pharetra. In purus erat, <strong>facilisis non urna</strong> eu
-        viverra fringilla orci. Vestibulum quis sagittis enim. Suspendisse
-        potenti. Integer congue est ac enim accumsan elementum. Maecenas quis
-        placerat metus.
+        I’m Manuel Pascual, a Full Stack Web Developer based in Argentina. I am
+        passionate about building amazing apps in order to make the web a
+        beautiful place. <strong>Since 2012</strong> I work as a freelance
+        developer with a strong background in Front End development and always
+        focused on writing clean, elegant, and efficient code.
       </Text>
       <Text className="mt-6 mb-2" font="secondary" color="alternative">
         My Programming Background
