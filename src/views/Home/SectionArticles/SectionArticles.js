@@ -11,30 +11,13 @@ import { VIEW_SECTIONS } from "../../../config/constants";
 
 const articles = [
   {
-    title: "Understanding destructuring in Javascript.",
-    url: "https://www.google.com/",
-    tags: ["javascript", "html", "consectetur"],
-    emoji: {
-      label: "controls",
-      symbol: "🎛",
-    },
-  },
-  {
-    title: "5 Javascript tips you must know to improve your workflow.",
-    url: "https://www.google.com/",
-    tags: ["javascript", "lorem"],
+    title: "Understanding Destructuring in Javascript.",
+    url:
+      "https://dev.to/pascualmj/understanding-destructuring-in-javascript-5elf",
+    tags: ["javascript", "es6"],
     emoji: {
       label: "book",
       symbol: "📖",
-    },
-  },
-  {
-    title: "How to upload images to Firebase Storage from NodeJS API.",
-    url: "https://www.google.com/",
-    tags: ["javascript", "node", "firebase", "api"],
-    emoji: {
-      label: "satelite",
-      symbol: "📡",
     },
   },
 ];
