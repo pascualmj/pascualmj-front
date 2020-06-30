@@ -2,7 +2,7 @@
 @import "../../assets/scss/mixins";
 
 .nav-main-toggler {
-  width: 2.7rem;
+  width: 2rem;
   height: 2.1rem;
   position: relative;
   cursor: pointer;
@@ -11,26 +11,44 @@
     display: none;
   }
 
-  [class*=" fa"] {
+  span {
     position: absolute;
-    left: 0;
-    top: 0;
-    font-size: $text-bigger;
-    color: $color-primary;
-    @include transition(opacity 0.3s ease);
+    display: block;
+    width: 4px;
+    height: 4px;
+    background-color: $color-primary;
+    top: 50%;
+    margin-top: -2px;
+    @include transition(all 0.3s ease);
 
-    &.nav-main-close {
-      opacity: 0;
+    &:nth-child(1) {
+      left: 0;
+    }
+
+    &:nth-child(2) {
+      left: 8px;
+    }
+
+    &:nth-child(3) {
+      left: 16px;
     }
   }
 
   &.variant-close {
-    .nav-main-open {
-      opacity: 0;
+    span:nth-child(1) {
+      width: 100%;
+      transform: rotate(45deg);
     }
 
-    .nav-main-close {
-      opacity: 1;
+    span:nth-child(2) {
+      left: 0;
+      width: 100%;
+      transform: rotate(-45deg);
+    }
+
+    span:nth-child(3) {
+      left: 50%;
+      margin-left: -2px;
     }
   }
 }

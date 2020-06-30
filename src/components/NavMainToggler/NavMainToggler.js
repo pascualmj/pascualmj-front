@@ -8,8 +8,9 @@ const NavMainToggler = ({ variant = "open", handleOpenNav }) => {
       className={`nav-main-toggler variant-${variant}`}
       onClick={handleOpenNav}
     >
-      <i className="fas fa-ellipsis-h fa-fw nav-main-open"></i>
-      <i className="fas fa-times fa-fw nav-main-close"></i>
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
   );
 };
