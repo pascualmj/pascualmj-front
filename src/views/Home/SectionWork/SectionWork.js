@@ -27,7 +27,7 @@ const projects = [
     imgUrl:
       "https://icons8.com/wp-content/uploads/2020/02/digital-illustration-brian-edward-miller.jpg",
     title: "Order Placing Platform",
-    technology: "Javascript",
+    technology: "JS",
     url: "https://www.gosail.com.ar/",
   },
   {
