@@ -1,14 +1,25 @@
 .greeting {
   display: flex;
   align-items: center;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
 
   .circle-image {
     flex: 0 0 auto;
   }
 
   .section-title {
-    margin-left: 4rem;
     position: relative;
-    top: 0.5rem;
+    text-align: center;
+    margin-top: 4rem;
+
+    @media (min-width: 768px) {
+      margin: 0 0 0 4rem;
+      top: 0.5rem;
+      text-align: left;
+    }
   }
 }
