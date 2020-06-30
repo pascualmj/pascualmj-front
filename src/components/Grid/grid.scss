@@ -10,13 +10,21 @@
 
   &.columns-2 {
     & > li {
-      width: 50%;
+      width: 100%;
+
+      @media (min-width: 1200px) {
+        width: 50%;
+      }
     }
   }
 
   &.columns-3 {
     & > li {
-      width: 33.33%;
+      width: 100%;
+
+      @media (min-width: 1200px) {
+        width: 33.33%;
+      }
     }
   }
 }
