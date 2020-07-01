@@ -3,7 +3,7 @@
 
 #nav-main {
   background-color: $color-full;
-  height: 100vh;
+  height: 100%;
   padding: 0 3rem;
   position: fixed;
   overflow-y: auto;
@@ -24,7 +24,11 @@
   }
 
   nav {
-    margin: 18rem 0 5rem -0.4rem;
+    margin: 17rem 0 5rem -0.4rem;
+
+    @media (min-width: 992px) {
+      margin-top: 18rem;
+    }
   }
 
   .square-dots-right {
