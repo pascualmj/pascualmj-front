@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 
 import Input from "../Input";
 import Textarea from "../Textarea";
@@ -6,10 +7,12 @@ import Form from "../Form";
 import Button from "../Button";
 import Alert from "../Alert";
 
-import { MESSAGE_SUCCESS } from "../../config/constants";
+import { sendMessage } from "../../services";
+import { MESSAGE_SUCCESS, MESSAGE_ERROR } from "../../config/constants";
 import { contactFormValidator } from "../../config/validators";
 
 const FormContact = () => {
+  const { executeRecaptcha } = useGoogleReCaptcha();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [alertData, setAlertData] = useState({
     text: "",
@@ -17,17 +20,26 @@ const FormContact = () => {
     show: false,
   });
 
-  const handleSubmit = (values, cleanForm) => {
-    setIsSubmitting(true);
-    setTimeout(() => {
-      setIsSubmitting(false);
+  const handleSubmit = async (values, cleanForm) => {
+    try {
+      if (!executeRecaptcha) return;
+      setIsSubmitting(true);
+      const GRCToken = await executeRecaptcha("homepage");
+      await sendMessage({ ...values, GRCToken });
       setAlertData({
         text: MESSAGE_SUCCESS,
         type: "success",
         show: true,
       });
       cleanForm(contactFormValidator.initialValues);
-    }, 3000);
+    } catch (error) {
+      setAlertData({
+        text: MESSAGE_ERROR,
+        type: "error",
+        show: true,
+      });
+    }
+    setIsSubmitting(false);
   };
 
   const closeAlert = () => {
