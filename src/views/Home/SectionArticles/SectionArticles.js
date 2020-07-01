@@ -11,6 +11,16 @@ import { VIEW_SECTIONS } from "../../../config/constants";
 
 const articles = [
   {
+    title: "What is the new Nullish Coalescing Operator in Javascript?",
+    url:
+      "https://dev.to/pascualmj/what-is-the-new-nullish-coalescing-operator-in-javascript-1h6k",
+    tags: ["javascript", "es2020"],
+    emoji: {
+      label: "paperclip",
+      symbol: "📎",
+    },
+  },
+  {
     title: "Understanding Destructuring in Javascript.",
     url:
       "https://dev.to/pascualmj/understanding-destructuring-in-javascript-5elf",
