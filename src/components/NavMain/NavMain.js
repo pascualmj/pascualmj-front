@@ -75,7 +75,10 @@ const NavMain = ({ viewScrollTop = 0, isOpen = false }) => {
       </nav>
       <div>
         <SocialIcons />
-        <Link text="Download my resume" url="https://www.google.com/" />
+        <Link
+          text="Explore this site's repo"
+          url="https://github.com/pascualmj/pascualmj-front"
+        />
       </div>
     </div>
   );
