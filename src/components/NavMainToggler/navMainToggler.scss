@@ -3,9 +3,9 @@
 
 .nav-main-toggler {
   width: 2rem;
-  height: 2.1rem;
   position: relative;
   cursor: pointer;
+  align-self: stretch;
 
   @media (min-width: 992px) {
     display: none;
