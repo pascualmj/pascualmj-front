@@ -5,6 +5,10 @@
   height: 100vh;
 }
 
+.grecaptcha-badge {
+  display: none !important;
+}
+
 // Utilities: Margins
 @each $side in $sides {
   @for $i from 1 through 10 {

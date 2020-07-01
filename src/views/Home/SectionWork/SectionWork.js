@@ -10,57 +10,49 @@ import { VIEW_SECTIONS } from "../../../config/constants";
 
 const projects = [
   {
-    imgUrl:
-      "https://icons8.com/wp-content/uploads/2020/02/digital-illustration-brian-edward-miller.jpg",
+    imgUrl: require("../../../assets/img/projects/project_00.jpg"),
     title: "Boat Selling Platform",
     technology: "Vue",
     url: "https://www.gosail.com.ar/",
   },
   {
-    imgUrl:
-      "https://icons8.com/wp-content/uploads/2020/02/digital-illustration-brian-edward-miller.jpg",
+    imgUrl: require("../../../assets/img/projects/project_01.jpg"),
     title: "Construction Materiales Company",
     technology: "JS",
     url: "https://messineomateriales.com/pedidos/",
   },
   {
-    imgUrl:
-      "https://icons8.com/wp-content/uploads/2020/02/digital-illustration-brian-edward-miller.jpg",
+    imgUrl: require("../../../assets/img/projects/project_02.jpg"),
     title: "Wedding Landing Page",
     technology: "React",
     url: "https://www.dayjorge.com/",
   },
   {
-    imgUrl:
-      "https://icons8.com/wp-content/uploads/2020/02/digital-illustration-brian-edward-miller.jpg",
+    imgUrl: require("../../../assets/img/projects/project_03.jpg"),
     title: "Insurance Brokers Website",
     technology: "Vue",
     url: "https://www.estudioveliz.com/",
   },
   {
-    imgUrl:
-      "https://icons8.com/wp-content/uploads/2020/02/digital-illustration-brian-edward-miller.jpg",
-    title: "Street Ads Business Landing Page",
+    imgUrl: require("../../../assets/img/projects/project_04.jpg"),
+    title: "Advertising Agency Landing Page",
     technology: "JS",
     url: "https://superestructurasmetalicas.com/",
   },
   {
-    imgUrl:
-      "https://icons8.com/wp-content/uploads/2020/02/digital-illustration-brian-edward-miller.jpg",
+    imgUrl: require("../../../assets/img/projects/project_05.jpg"),
     title: "Hotel Website",
     technology: "JS",
     url: "https://clairdelunevgb.com.ar/",
   },
   {
-    imgUrl:
-      "https://icons8.com/wp-content/uploads/2020/02/digital-illustration-brian-edward-miller.jpg",
+    imgUrl: require("../../../assets/img/projects/project_06.jpg"),
     title: "Construction Company Website",
     technology: "JS",
     url: "http://www.luiniyluini.com.ar/",
   },
   {
-    imgUrl:
-      "https://icons8.com/wp-content/uploads/2020/02/digital-illustration-brian-edward-miller.jpg",
+    imgUrl: require("../../../assets/img/projects/project_07.jpg"),
     title: "Agency Portfolio Website",
     technology: "JS",
     url: "https://www.estudiobl.com/en/home/",

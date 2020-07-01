@@ -6,10 +6,13 @@ import List from "../List";
 
 const SocialIcons = ({ variant = "absence", className = "" }) => {
   const [socialIcons] = useState([
-    { label: "fab fa-github", url: "https://www.gosail.com.ar/" },
-    { label: "fab fa-npm", url: "https://www.gosail.com.ar/" },
-    { label: "fab fa-twitter", url: "https://www.gosail.com.ar/" },
-    { label: "fab fa-linkedin-in", url: "https://www.gosail.com.ar/" },
+    { label: "fab fa-github", url: "https://github.com/pascualmj/" },
+    { label: "fab fa-npm", url: "https://www.npmjs.com/~pascualmj" },
+    { label: "fab fa-dev", url: "https://dev.to/pascualmj" },
+    {
+      label: "fab fa-linkedin-in",
+      url: "https://www.linkedin.com/in/manueljpascual/",
+    },
   ]);
 
   return (

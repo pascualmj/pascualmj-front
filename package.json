@@ -4,15 +4,20 @@
   "private": true,
   "dependencies": {
     "alfil": "^0.7.0",
+    "axios": "^0.19.2",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-google-recaptcha-v3": "^1.5.2",
     "react-scripts": "3.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prod": "react-scripts build; npm run build:lambda",
+    "start:lambda": "netlify-lambda serve functions",
+    "build:lambda": "netlify-lambda build functions"
   },
   "eslintConfig": {
     "extends": "react-app"
