@@ -13,7 +13,7 @@ import "./index.scss";
 
 ReactDOM.render(
   <React.StrictMode>
-    <GoogleReCaptchaProvider reCaptchaKey="6LeMGqwZAAAAAKdZ7h1xlypJyA8dlUI6StqJxFYK">
+    <GoogleReCaptchaProvider reCaptchaKey={process.env.RECAPTCHA_CLIENT_KEY}>
       <App />
     </GoogleReCaptchaProvider>
   </React.StrictMode>,

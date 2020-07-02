@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiClient = axios.create({
-  baseURL: "https://www.pascualmj.dev/.netlify/functions",
+  baseURL: process.env.NETLIFY_FUNCTIONS_URL,
   withCredentials: false,
   headers: {
     Accept: "application/json",
