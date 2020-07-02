@@ -27,7 +27,7 @@ const App = () => {
 
   return (
     <>
-      <PreloaderMain isLoading={isLoading} delay={1000} />
+      <PreloaderMain isLoading={isLoading} delay={6000} />
       <HeaderMain handleOpenNav={handleOpenNav} navIsOpen={navIsOpen} />
       <NavMain viewScrollTop={viewScrollTop} isOpen={navIsOpen} />
       <ViewContainer

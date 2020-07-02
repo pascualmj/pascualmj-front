@@ -15,4 +15,45 @@
   &.hidden {
     opacity: 0;
   }
+
+  svg {
+    width: 100px;
+
+    path {
+      stroke-dasharray: 400;
+      stroke-dashoffset: 400;
+      animation: svg-anim 6s ease forwards;
+      -webkit-animation: svg-anim 6s ease forwards;
+      -moz-animation: svg-anim 6s ease forwards;
+      -o-animation: svg-anim 6s ease forwards;
+      -ms-animation: svg-anim 6s ease forwards;
+    }
+
+    @keyframes svg-anim {
+      50% {
+        stroke-dashoffset: 0;
+      }
+      100% {
+        stroke-dashoffset: 400;
+      }
+    }
+
+    @-webkit-keyframes svg-anim {
+      50% {
+        stroke-dashoffset: 0;
+      }
+      100% {
+        stroke-dashoffset: 400;
+      }
+    }
+
+    @-moz-keyframes svg-anim {
+      50% {
+        stroke-dashoffset: 0;
+      }
+      100% {
+        stroke-dashoffset: 400;
+      }
+    }
+  }
 }
