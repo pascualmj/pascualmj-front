@@ -64,9 +64,9 @@ const SectionWork = () => {
     <ViewSection id={VIEW_SECTIONS.sectionWork}>
       <SectionTitle title="My Work." size="regular" />
       <Text className="mt-2 mb-7">
-        Feel free to take a look at some of my <strong>latest projects</strong>{" "}
-        I worked in. I love to be faced with new projects, striving to offer the
-        best user experience.
+        Feel free to take a look at some of my <strong>latest projects</strong>.
+        I love to be faced with new projects, striving to offer the best user
+        experience.
       </Text>
       <Grid
         items={projects}

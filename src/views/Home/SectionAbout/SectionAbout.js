@@ -30,9 +30,10 @@ const SectionAbout = () => {
       <Text className="mt-7">
         I’m Manuel Pascual, a Full Stack Web Developer based in Argentina. I am
         passionate about building amazing apps in order to make the web a
-        beautiful place. <strong>Since 2012</strong> I work as a freelance
-        developer with a strong background in Front End development and always
-        focused on writing clean, elegant, and efficient code.
+        beautiful place. I've been working as a freelance developer{" "}
+        <strong>since 2012</strong> with a strong background in Front End
+        development and always focused on writing clean, elegant, and efficient
+        code.
       </Text>
       <Text className="mt-6 mb-2" font="secondary" color="alternative">
         My Programming Background
