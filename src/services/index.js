@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiClient = axios.create({
-  baseURL: process.env.NETLIFY_FUNCTIONS_URL,
+  baseURL: process.env.REACT_APP_NETLIFY_FUNCTIONS_URL,
   withCredentials: false,
   headers: {
     Accept: "application/json",
