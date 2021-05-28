@@ -15,7 +15,7 @@ import { VIEW_SECTIONS, MAIN_VIEW_CONTAINER_ID } from "../../config/constants";
 const NavMain = ({ viewScrollTop = 0, isOpen = false }) => {
   const [navLinks, setNavLinks] = useState([
     {
-      text: "aboute me",
+      text: "about me",
       scrollTo: VIEW_SECTIONS.sectionAbout,
       isActive: false,
     },
