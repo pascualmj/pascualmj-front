@@ -10,7 +10,7 @@ import { VIEW_SECTIONS } from "../../../config/constants";
 
 const projects = [
   {
-    imgUrl: require("../../../assets/img/projects/project_09.jpg"),
+    imgUrl: require("../../../assets/img/projects/project_08.jpg"),
     title: "Flowers Company from USA",
     technology: "JS",
     url: "https://hlandflowers.com/",
@@ -34,7 +34,7 @@ const projects = [
     url: "https://iblbroker.com.ar/",
   },
   {
-    imgUrl: require("../../../assets/img/projects/project_08.jpg"),
+    imgUrl: require("../../../assets/img/projects/project_09.jpg"),
     title: "Travel Agency",
     technology: "JS",
     url: "https://fpincarg.com/",
