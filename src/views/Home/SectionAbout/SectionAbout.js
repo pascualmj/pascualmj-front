@@ -15,11 +15,11 @@ const skills = [
   { text: "html" },
   { text: "css" },
   { text: "javascript" },
-  { text: "typescript" },
-  { text: "react native" },
-  { text: "react" },
-  { text: "vue" },
   { text: "node" },
+  { text: "typescript" },
+  { text: "react" },
+  { text: "react native" },
+  { text: "jest" },
 ];
 
 const SectionAbout = () => {
@@ -32,12 +32,12 @@ const SectionAbout = () => {
       <Text className="mt-7">
         I’m Manuel Pascual, a Full Stack Web Developer based in Argentina. I am
         passionate about building amazing apps in order to make the web a
-        beautiful place. I've been working as a freelance developer{" "}
+        beautiful place. I've been working as a software developer{" "}
         <strong>since 2012</strong> with a strong background in Front End
         development and always focused on writing clean, elegant, and efficient
         code.{" "}
         <strong>
-          Currently working as a Senior Frontend Developer at Telecom Argentina.
+          Currently working as a Senior Software Engineer at Yabble.
         </strong>
       </Text>
       <Text className="mt-6 mb-2" font="secondary" color="alternative">
